@@ -3,6 +3,7 @@
     "name": "progetto-router-MF",
     "slug": "progetto-router-MF",
     "version": "1.0.0",
+    "scheme": "myapp",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,13 +17,17 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
+      "adaptiveIcon": { 
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
